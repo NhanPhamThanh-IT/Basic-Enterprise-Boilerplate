@@ -1,7 +1,7 @@
 export const Themes = {
-    LIGHT: 'light',
-    DARK: 'dark',
-    SYSTEM: 'system',
-} as const;
+  LIGHT: 'light',
+  DARK: 'dark',
+  SYSTEM: 'system'
+} as const
 
-export type Themes = typeof Themes[keyof typeof Themes];
+export type Themes = (typeof Themes)[keyof typeof Themes]
